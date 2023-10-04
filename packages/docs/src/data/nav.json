@@ -208,16 +208,15 @@
         "activeIcon": "",
         "inactiveIcon": "",
         "items": [
+          "introduction",
+          { "subheader": "guide" },
           "basics",
-          "headers",
-          "selection",
-          "sorting",
-          "pagination",
-          "filtering",
-          "grouping",
-          "slots",
-          "virtual-tables",
-          "server-side-tables"
+          "data-and-display",
+          "structure",
+          { "subheader": "types" },
+          "data-tables",
+          "server-side-tables",
+          "virtual-tables"
         ]
       },
       {
