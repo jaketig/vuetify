@@ -12,6 +12,7 @@
           item-value="id"
           activatable
           border
+          fluid
           open-on-click
           rounded
         >
@@ -108,6 +109,7 @@
     {
       name: 'Users',
       children: users.value,
+      id: 'users',
     },
   ])
 

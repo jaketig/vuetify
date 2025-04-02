@@ -59,6 +59,12 @@ A basic example of the treeview component.
 
 <ApiInline hide-links />
 
+::: error
+
+There is a [bug](https://github.com/vuejs/babel-plugin-jsx/issues/712) related to how [babel-plugin-jsx](https://github.com/vuejs/babel-plugin-jsx) renders templates that degrades VTreeview performance. We are tracking the issue [here](https://github.com/vuetifyjs/vuetify/issues/19919).
+
+:::
+
 ## Guide
 
 The `v-treeview` component is useful for displaying large amounts of nested data. It is a tree structure that can be expanded and collapsed, allowing users to navigate through the hierarchy of items.
@@ -111,11 +117,11 @@ You can make treeview nodes rounded.
 
 <ExamplesExample file="v-treeview/prop-rounded" /> -->
 
-<!-- #### Selectable
+#### Fluid
 
-You can easily select treeview nodes and children.
+The **fluid** prop removes the extra indentation used to line up children. This is useful when you want to reduce the horizontal space used by the treeview.
 
-<ExamplesExample file="v-treeview/prop-selectable" /> -->
+<ExamplesExample file="v-treeview/prop-fluid" />
 
 #### Selected color
 
@@ -144,6 +150,12 @@ The `v-treeview` component has several slots that allow you to customize the app
 Using the the **prepend** slot we are able to create an intuitive file explorer.
 
 <ExamplesExample file="v-treeview/slot-append-and-label" />
+
+#### Title
+
+In this example we use a custom **title** slot to apply a line-through the treeview item's text when selected.
+
+<ExamplesExample file="v-treeview/slot-title" />
 
 ## Examples
 
